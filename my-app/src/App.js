@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import { TransactionHistory } from './transactions'; 
 import transactions from './transactions.json'; 
 import { Statistics } from './statistics';
