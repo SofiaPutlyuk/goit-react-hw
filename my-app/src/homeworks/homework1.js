@@ -1,10 +1,6 @@
 const name = "Sophia"
 const imageUrl = "https://st2.depositphotos.com/5482604/8042/i/450/depositphotos_80421542-stock-photo-funny-cat-delivery-service.jpg"
 const altImg = "FunnyCat"
-const myFavouriteWebs = [
-  { title: "React Native", url: "https://reactnative.dev/" },
-  { title: "Node.js", url: "https://nodejs.org/en" }
-]
 const num1 = 2;
 const num2 = 3;
 const sum = num1 + num2
@@ -25,7 +21,5 @@ const InfoShow = ({ web }) => (
     </ul>
   </div>
 )
-ReactDOM.render(
-  <InfoShow web={myFavouriteWebs} />,
-  document.getElementById('root')
-)
+
+export default InfoShow;

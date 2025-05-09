@@ -1,7 +1,8 @@
+//Homework 2 
 const Greeting = props => (
     <h1>{`Привіт,${props.name}!`}</h1>
 )
-const App = () => (
+const HomeworkTwo = () => (
     <div>
         <Greeting name="Іван" />
         <Message text="Як справи ?" />
@@ -17,4 +18,6 @@ function SayWeather(text) {
 const Button = props => (
     <button onClick={() => SayWeather(props.newText)}>Click me</button>
 )
-ReactDOM.render(<App />, document.getElementById("root"))
+
+
+export default HomeworkTwo;
