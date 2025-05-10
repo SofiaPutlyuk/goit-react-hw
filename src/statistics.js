@@ -1,5 +1,5 @@
 import React from 'react';
-import "../src/index.css";
+import "./index.css";
 export const Statistics = ({stats}) => (
     <section className="statistics">
     <h2 className="title">Upload stats</h2>

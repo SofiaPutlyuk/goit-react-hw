@@ -1,5 +1,5 @@
 import React from 'react';
-import "../src/index.css";
+import "./index.css";
 export const TransactionHistory = ({ items }) => (
   <table className="transaction-history">
     <thead>
