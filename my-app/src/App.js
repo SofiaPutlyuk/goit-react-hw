@@ -9,6 +9,7 @@ import { Profile } from './user';
 import user from './user.json'
 import InfoShow from './homeworks/homework1';
 import HomeworkTwo from './homeworks/homework2';
+import DishApp from './homeworks/homework3';
 const myFavouriteWebs = [
   { title: "React Native", url: "https://reactnative.dev/" },
   { title: "Node.js", url: "https://nodejs.org/en" }
@@ -16,6 +17,7 @@ const myFavouriteWebs = [
 function App() {
   return (
     <div className="App">
+      <h1>Homework 3 and 4</h1>
       <h1>Transaction History</h1>
       <TransactionHistory items={transactions} />
       <Statistics title="Upload stats" stats={data} />
@@ -31,6 +33,8 @@ function App() {
 <InfoShow web={myFavouriteWebs} />
 <h2>Нomework2</h2>
 <HomeworkTwo />
+<h2>Homework 5</h2>
+<DishApp />
     </div>
   );
 }
