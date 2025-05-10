@@ -9,7 +9,7 @@ import { Profile } from './user';
 import user from './user.json'
 import InfoShow from './homeworks/homework1';
 import HomeworkTwo from './homeworks/homework2';
-import DishApp from './homeworks/homework3';
+import DishApp from './homeworks/homework3'
 const myFavouriteWebs = [
   { title: "React Native", url: "https://reactnative.dev/" },
   { title: "Node.js", url: "https://nodejs.org/en" }
