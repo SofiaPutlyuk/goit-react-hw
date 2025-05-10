@@ -1,3 +1,11 @@
+import styled from "styled-components";
+import burgerIcon from '../images/burger.jpeg'
+import chickenIcon from '../images/chicken.jpg'
+import potatoIcon from '../images/potato.jpg'
+import saladIcon from '../images/salad.jpg'
+import timeIcon from '../images/time.png'
+import staticIcon from '../images/statics.png'
+import signalIcon from '../images/signal-alt.png'
 const Div = styled.div`
   background-color: #f5f5dc;
   width: 100%;
@@ -89,19 +97,19 @@ margin-left:10px;
   background-color:pink;
 }
 `
-const App = () => (
+const DishApp = () => (
  
   <Div>
   <InsideContainer>
 <Wrapper>
-<Img src="./burger.jpeg" alt="burger"></Img>
+<Img src={burgerIcon} alt="burger"></Img>
 <Text>Smoked salmon burger</Text>
 <InfoDiv>
-<Icon src="./time.png" alt="time"></Icon>
+<Icon src={timeIcon} alt="time"></Icon>
 <TextInfo>20 min</TextInfo>
-<Icon src="./statics.png" alt="statics"></Icon>
+<Icon src={staticIcon} alt="statics"></Icon>
 <TextInfo>6 servings</TextInfo>
-<Icon src="./signal-alt.png" alt="level"></Icon>
+<Icon src={signalIcon} alt="level"></Icon>
 <TextInfo>210 calories</TextInfo>
 </InfoDiv>
 <Difficulty difficulty={0}>
@@ -112,14 +120,14 @@ const App = () => (
 </Difficulty>
 </Wrapper>
 <Wrapper>
-<Img src="./salad.jpg" alt="salad"></Img>
+<Img src={saladIcon} alt="salad"></Img>
 <Text>Tomatoes With Creamy Feta</Text>
 <InfoDiv>
-<Icon src="./time.png" alt="time"></Icon>
+<Icon src={timeIcon} alt="time"></Icon>
 <TextInfo>15 min</TextInfo>
-<Icon src="./statics.png" alt="statics"></Icon>
+<Icon src={staticIcon} alt="statics"></Icon>
 <TextInfo>3 servings</TextInfo>
-<Icon src="./signal-alt.png" alt="level"></Icon>
+<Icon src={signalIcon} alt="level"></Icon>
 <TextInfo>600 calories</TextInfo>
 </InfoDiv>
 <Difficulty difficulty={0}>
@@ -130,14 +138,14 @@ const App = () => (
 </Difficulty>
 </Wrapper>
 <Wrapper>
-<Img src="./potato.jpg" alt="potato"></Img>
+<Img src={potatoIcon} alt="potato"></Img>
 <Text>Spicy potato salad</Text>
 <InfoDiv>
-<Icon src="./time.png" alt="time"></Icon>
+<Icon src={timeIcon} alt="time"></Icon>
 <TextInfo>30 min</TextInfo>
-<Icon src="./statics.png" alt="statics"></Icon>
+<Icon src={staticIcon} alt="statics"></Icon>
 <TextInfo>2 servings</TextInfo>
-<Icon src="./signal-alt.png" alt="level"></Icon>
+<Icon src={signalIcon} alt="level"></Icon>
 <TextInfo>320 calories</TextInfo>
 </InfoDiv>
 <Difficulty difficulty={1}>
@@ -148,14 +156,14 @@ const App = () => (
 </Difficulty>
 </Wrapper>
 <Wrapper>
-<Img src="./chicken.jpg" alt="chicken"></Img>
+<Img src={chickenIcon} alt="chicken"></Img>
 <Text>Chicken Biryani</Text>
 <InfoDiv>
-<Icon src="./time.png" alt="time"></Icon>
+<Icon src={timeIcon} alt="time"></Icon>
 <TextInfo>40 min</TextInfo>
-<Icon src="./statics.png" alt="statics"></Icon>
+<Icon src={staticIcon} alt="statics"></Icon>
 <TextInfo>4 servings</TextInfo>
-<Icon src="./signal-alt.png" alt="level"></Icon>
+<Icon src={signalIcon} alt="level"></Icon>
 <TextInfo>700 calories</TextInfo>
 </InfoDiv>
 <Difficulty difficulty={3}>
@@ -169,4 +177,4 @@ const App = () => (
   </Div>
 
 );
-ReactDOM.render(<App />, document.getElementById('root'));
+export default DishApp;
